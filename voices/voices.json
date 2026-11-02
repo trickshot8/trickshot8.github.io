@@ -1,0 +1,5 @@
+{
+  "note": "ZipVoice reference clips (synthetic TTS voices cut from the JPL family podcast). reference-text must match exactly.",
+  "xiaobei": {"file": "xiaobei.wav", "text": "按这条线，第一站是加工厂，一七零号楼。这里用各种精密机床，把一块块金属加工成要上天的零件。"},
+  "yunjian": {"file": "yunjian.wav", "text": "明天你在大屏幕上看到的数据，有可能就是从火星，或者从旅行者号传回来的。"}
+}

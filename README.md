@@ -4,6 +4,7 @@ Small, free static pages, served by GitHub Pages. No build step, no tracking, no
 
 | Path | What |
 |---|---|
+| `/voices/` | Reference clips for the podcast voices (synthetic TTS, used as ZipVoice prompts) |
 | `/ucla-eyu-2026/` | Unofficial bilingual (中/EN) family guide to UCLA Exploring Your Universe 2026, with a short podcast in each language |
 
 Each page is a self-contained `index.html` plus its media. Information on event pages was checked against the official site on the date shown in the page footer; the official site always takes priority.
