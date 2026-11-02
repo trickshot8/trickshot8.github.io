@@ -14,7 +14,7 @@ nav{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;
 .pod .ph{display:flex;gap:12px;align-items:center;margin-top:12px}.pod .play{flex:none;width:52px;height:52px;border-radius:50%;border:0;background:var(--forest);color:#fff;display:grid;place-items:center}.pod .play svg{width:20px;height:20px;fill:currentColor}.pod .scrub{flex:1;display:grid;grid-template-columns:auto 1fr auto;gap:9px;align-items:center;font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}.pod .scrub input{width:100%;accent-color:var(--forest)}.pod .prow{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:10px 0 8px;font-size:12.5px;color:var(--muted)}.pod .rate{border:1px solid var(--line);background:#fff;border-radius:99px;padding:3px 10px;font-size:12.5px;color:var(--ink)}.pod .rate[aria-pressed=true]{border-color:var(--forest);color:var(--forest);font-weight:750}.pod .ptx{max-height:260px;overflow-y:auto;border-top:1px solid var(--line);padding-top:6px;display:grid;gap:2px}.pod .ln{display:grid;grid-template-columns:2.6em 1fr;gap:8px;text-align:left;border:0;background:none;color:var(--muted);font-size:14px;line-height:1.6;padding:6px 8px;border-radius:8px}.pod .ln b{font-size:12px;padding-top:2px}.pod .ln.F b{color:#b1643a}.pod .ln.M b{color:var(--blue)}.pod .ln.on{background:#eef5ef;color:var(--ink)}.pod .perr{font-size:13px;color:#935d3c;margin:6px 0 0}
 @media(max-width:750px){.row{grid-template-columns:1fr}.top-inner{padding-top:19px}.stars{right:-4px;top:23px;opacity:.22}.summary{grid-template-columns:repeat(3,minmax(0,1fr))}.stat{padding:11px 9px}.stat b{font-size:17px}.panel{padding:15px}.layout2{grid-template-columns:1fr}nav button{padding:13px 13px}.event{grid-template-columns:67px 15px 1fr;gap:6px}.event:not(:last-child):before{left:73px}.evtime{font-size:13px}.evbody{padding:10px}.btn{padding:9px 10px}.meta span{font-size:11px}}
 @media print{nav,.btn,.seg{display:none!important}.tab{display:block!important}.top{color:black;background:white}.top .eyebrow,.top .subtitle{color:#555}.top h1 em{color:#555}.panel{box-shadow:none;page-break-inside:avoid}}
-.toprow{display:flex;align-items:center;justify-content:space-between;gap:12px}.lang{display:flex;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:99px;padding:3px;position:relative;z-index:2}.lang button{border:0;background:none;color:#d8e8df;font-size:12.5px;font-weight:750;padding:5px 11px;border-radius:99px}.lang button[aria-pressed=true]{background:#fff;color:var(--forest)}
+.toprow{display:flex;align-items:center;justify-content:space-between;gap:12px}.lang{display:flex;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:99px;padding:3px;position:relative;z-index:2}.lang button{border:0;background:none;color:#d8e8df;font-size:12.5px;font-weight:750;padding:5px 11px;border-radius:99px}.lang button[aria-pressed=true]{background:#fff;color:var(--forest)}.pill.blue{background:#e9eefb;color:#385f97}.mypicks{background:#f4f8f3;border:1px solid #e6eee7;border-radius:13px;padding:12px 13px;margin:12px 0}.mypicks .mp{font-size:14px;padding:4px 0;border-bottom:1px dashed #e1e8e1}.mypicks .mp:last-child{border-bottom:0}.mypicks .mp b{color:var(--forest);margin-right:6px;font-variant-numeric:tabular-nums}.cf{display:block;color:#a24d2a;font-size:12.5px;font-weight:650;margin-top:3px}.mp.bad b{color:#a24d2a}.slot{margin-top:14px}.sh{font-weight:850;color:var(--forest);font-size:15px;padding:4px 0;border-bottom:2px solid var(--line);font-variant-numeric:tabular-nums}.se{display:flex;gap:10px;align-items:flex-start;padding:11px 2px;border-bottom:1px solid #edf0eb}.se.on{background:#f1f8f3}.se.bad{background:#fff4ee}.sb{flex:1;min-width:0}.st{font-weight:750;font-size:15px;line-height:1.4}.sen{font-size:12.5px;color:var(--muted)}.sm{font-size:12.5px;color:var(--muted);margin-top:4px}.star{flex:none;border:1px solid var(--line);background:#fff;border-radius:10px;width:42px;height:42px;font-size:20px;color:#b98a2a}.star[aria-pressed=true]{background:#fff6dd;border-color:#e8c46a}
 </style>
 </head>
 <body>
@@ -24,7 +24,7 @@ nav{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;
 <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="zh">中</button><button type="button" data-lang="en">EN</button></div></div>
 <h1 data-t="h1" data-html="1"></h1><p class="subtitle" data-t="subtitle"></p>
 <div class="meta"><span data-t="m_date"></span><span data-t="m_time"></span><span data-t="m_place"></span><span data-t="m_free"></span></div></div></header>
-<nav aria-label="Sections"><div class="wrap"><button class="on" data-tab="plan" data-t="tab_plan"></button><button data-tab="program" data-t="tab_program"></button><button data-tab="map" data-t="tab_map"></button><button data-tab="prep" data-t="tab_prep"></button></div></nav>
+<nav aria-label="Sections"><div class="wrap"><button class="on" data-tab="plan" data-t="tab_plan"></button><button data-tab="pick" data-t="tab_pick"></button><button data-tab="program" data-t="tab_program"></button><button data-tab="map" data-t="tab_map"></button><button data-tab="prep" data-t="tab_prep"></button></div></nav>
 <main class="wrap main">
 <section id="plan" class="tab on">
 <div class="panel pod"><div class="kicker" data-t="pod_kicker"></div><h2 data-t="pod_title"></h2><p class="small muted" style="margin:6px 0 0" data-t="pod_desc"></p>
@@ -47,6 +47,7 @@ nav{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;
 <div class="callout cool" data-t="tix_cnsi" data-html="1"></div></div>
 <div class="panel"><div class="kicker" data-t="fam_kicker"></div><h2 data-t="fam_title"></h2><div id="famTips"></div></div>
 </div></div></section>
+<section id="pick" class="tab"><div class="panel"><div class="kicker" data-t="pk_kicker"></div><h2 data-t="pk_title"></h2><p class="small muted" data-t="pk_desc"></p><div class="mypicks" id="myPicks"></div><div class="seg" role="group" id="pkFilter"><button class="on" data-f="all" data-t="pf_all"></button><button data-f="young" data-t="pf_young"></button><button data-f="talk" data-t="pf_talk"></button><button data-f="show" data-t="pf_show"></button><button data-f="mine" data-t="pf_mine"></button></div><div id="sessList"></div><p class="footnote" data-t="pk_note"></p></div></section>
 <section id="program" class="tab"><div class="panel"><div class="kicker" data-t="prog_kicker"></div><h2 data-t="prog_title"></h2><p class="small muted" data-t="prog_desc"></p><div id="activityCards"></div></div>
 <div class="panel"><h2 data-t="sp_title"></h2><div class="layout2" id="specials"></div></div>
 <div class="panel"><h2 data-t="skip_title"></h2><p class="small muted" data-t="skip_body" data-html="1"></p></div></section>
@@ -71,14 +72,14 @@ const U={event:'https://exploringyouruniverse.ucla.edu/',planet:'https://explori
 const T={zh:{
 eyebrow:'FIELD GUIDE · SCIENCE DAY',h1:'探索<span style="color:#b6ddca">你的</span><em>宇宙</em>',subtitle:'UCLA Exploring Your Universe 2026 · 带孩子逛科学日的行动指南',
 m_date:'📅 11月8日 · 周日',m_time:'🕛 12:00–17:00',m_place:'📍 UCLA Court of Sciences',m_free:'🎟 免费 · 建议先 RSVP',
-tab_plan:'🧭 当天行程',tab_program:'🔭 活动攻略',tab_map:'🗺️ 怎么去',tab_prep:'✅ 行前清单',
+tab_plan:'🧭 当天行程',tab_pick:'📅 选场次',tab_program:'🔭 活动攻略',pk_kicker:'BUILD YOUR DAY',pk_title:'选场次',pk_desc:'官网公布的全部讲座、PBS 放映和 SpinLab 场次。点 ☆ 选中，选中的会加进「当天行程」的时间轴和日历文件；时间冲突会标出来。互动展台全天开放，不用排。',pf_all:'全部',pf_young:'适合低年级',pf_talk:'讲座',pf_show:'放映 · 户外',pf_mine:'已选',pk_note:'讲座 30 分钟；放映结束时间官网没公布，按约 40 分钟估算；SpinLab 每个整点开始，约 30–40 分钟。年级是官网写的建议，没写的标「未标注」。',pk_none:'还没选。点下面场次右边的 ☆。',pk_mine:'我的场次',pk_copy:'⎘ 复制我的场次',pk_clear:'清空',pk_clear_q:'清空所有已选场次？',pk_conf:'和 {x} 冲突',pk_conf_tix:'你的天文馆场次',pk_est:'结束时间为估计',pk_empty:'这个筛选下没有场次。',g:{k2:'K–2',g35:'3–5 年级',g68:'6–8 年级',g912:'9–12 年级',na:'年级未标注',all:'所有年龄'},kind:{talk:'讲座',pbs:'PBS 放映',spin:'户外演示'},pick_tag:'我选的',tab_map:'🗺️ 怎么去',tab_prep:'✅ 行前清单',
 pod_kicker:'WEEKEND RADIO · 约 5 分钟',pod_title:'周末小电台：去 UCLA 科学日之前',pod_desc:'小北和云健讲讲这一天有哪些选择。出发前一起听，或者路上放。',pod_speed:'语速',pod_tap:'点任意一句可跳转',pod_err:'音频没加载出来，可以先看下面的文字稿。',pod_play:'播放',pod_pause:'暂停',
 plan_kicker:'YOUR SUNDAY PLAN',plan_title:'少赶场，多动手',plan_desc:'主线是 <strong>互动科学展台 → 适龄讲座或 PBS 放映 → 旋转科学演示</strong>。天文馆要现场领票，拿到票再插进行程。',
 s1b:'12–5 PM',s1s:'官方开放时间',s2b:'FREE',s2s:'全部活动免费',s3b:'86',s3s:'互动展台',
 btn_rsvp:'↗ 免费 RSVP',btn_ics:'↓ 加入日历',btn_site:'官网 ↗',plan_notice:'展台分布看现场地图和指示牌；去哪几个展台，让孩子自己挑。',
 tl_kicker:'ITINERARY · FLEXIBLE',tl_title:'当天时间轴',mode_explore:'动手优先',mode_planet:'天文馆优先',mode_light:'带小宝宝的短行程',btn_copy:'⎘ 复制当前行程',copied:'✓ 已复制',
 ex_explore:'主线不靠限量票。讲座、放映都是可选，孩子还想做实验就留在展台。',ex_planet:'领到天文馆票后，按票面时间重排；和它冲突的讲座直接放弃。',ex_light:'两个半小时左右。体力和宝宝优先，不跨楼追节目。',
-tag:{OFFICIAL:'官网时刻',TICKET:'已领票',PLAN:'建议安排',VERIFY:'现场确认',OPTION:'可选'},src_ref:'官方依据 ↗',
+tag:{OFFICIAL:'官网时刻',TICKET:'已领票',PLAN:'建议安排',VERIFY:'现场确认',OPTION:'可选',PICK:'我选的'},src_ref:'官方依据 ↗',
 tix_kicker:'AT THE ENTRANCE',tix_title:'天文馆领票',tix_box:'🌌 天文馆 · Math Sciences 8 楼',tix_rules:'12:00 发 13:00–15:30 场次的票；15:00 发 16:00–17:30 场次的票。每人最多 5 张，先到先得，开场前 10 分钟要到。婴儿车不能进去。',tix_got:'已领到天文馆票',tix_rules_link:'官方规则 ↗',tix_time:'票面开场时间',tix_time_hint:'放映约 20 分钟。选「天文馆优先」后会加进时间轴。',
 tix_need_time:'已勾选领票，还没填票面时间。选「天文馆优先」并填上开场时间，会自动加进时间轴。',tix_range:'天文馆放映在 13:00–17:30 之间，请核对票面。',tix_conflict:'可能和 {x} 冲突（放映结束时间是估的），优先已领票的场次。',
 tix_cnsi:'<strong>CNSI 实验室参观要满 12 岁。</strong> 带小小孩的话，不用为它排队。',
@@ -96,14 +97,14 @@ copy_mode:{explore:'动手优先：12 点决定要不要排天文馆票 → 展�
 },en:{
 eyebrow:'FIELD GUIDE · SCIENCE DAY',h1:'Exploring <span style="color:#b6ddca">Your</span> <em>Universe</em>',subtitle:'UCLA Exploring Your Universe 2026 · A field guide for families with kids',
 m_date:'📅 Sun, Nov 8',m_time:'🕛 12–5 PM',m_place:'📍 UCLA Court of Sciences',m_free:'🎟 Free · RSVP recommended',
-tab_plan:'🧭 The day',tab_program:'🔭 Programs',tab_map:'🗺️ Getting there',tab_prep:'✅ Checklist',
+tab_plan:'🧭 The day',tab_pick:'📅 Pick sessions',tab_program:'🔭 Programs',pk_kicker:'BUILD YOUR DAY',pk_title:'Pick your sessions',pk_desc:'Every talk, PBS KIDS screening and SpinLab session on the official schedule. Tap ☆ to add one; picks show up in the timeline on "The day" and in the calendar file, and clashes are flagged. Booths run all day, so they aren\'t listed.',pf_all:'All',pf_young:'Young kids',pf_talk:'Talks',pf_show:'Screenings · outdoor',pf_mine:'My picks',pk_note:'Talks are 30 minutes. Screening end times aren\'t posted, so they\'re estimated at about 40 minutes. SpinLab starts on the hour and runs about 30–40 minutes. Grade levels are the official recommendations; "not listed" means the site doesn\'t give one.',pk_none:'Nothing picked yet. Tap the ☆ next to a session below.',pk_mine:'My sessions',pk_copy:'⎘ Copy my sessions',pk_clear:'Clear',pk_clear_q:'Remove all picked sessions?',pk_conf:'Clashes with {x}',pk_conf_tix:'your planetarium show',pk_est:'end time estimated',pk_empty:'No sessions match this filter.',g:{k2:'K–2',g35:'Grades 3–5',g68:'Grades 6–8',g912:'Grades 9–12',na:'Grade not listed',all:'All ages'},kind:{talk:'Talk',pbs:'PBS KIDS',spin:'Outdoor demo'},pick_tag:'My pick',tab_map:'🗺️ Getting there',tab_prep:'✅ Checklist',
 pod_kicker:'WEEKEND RADIO · ABOUT 5 MIN',pod_title:'Weekend Radio: Before UCLA Science Day',pod_desc:'Maya and Leo walk through your options for the day. Listen together before you go, or in the car.',pod_speed:'Speed',pod_tap:'Tap any line to jump',pod_err:'The audio didn\'t load. You can still read the transcript below.',pod_play:'Play',pod_pause:'Pause',
 plan_kicker:'YOUR SUNDAY PLAN',plan_title:'Fewer dashes, more hands-on',plan_desc:'The core loop: <strong>hands-on booths → a kid-friendly talk or PBS screening → the spinning-water demo</strong>. Planetarium tickets are handed out on site, so add the show once you have a ticket.',
 s1b:'12–5 PM',s1s:'Official hours',s2b:'FREE',s2s:'Everything is free',s3b:'86',s3s:'Hands-on booths',
 btn_rsvp:'↗ Free RSVP',btn_ics:'↓ Add to calendar',btn_site:'Official site ↗',plan_notice:'Use the on-site map and signs to find booths, and let the kids pick where to go.',
 tl_kicker:'ITINERARY · FLEXIBLE',tl_title:'Timeline',mode_explore:'Hands-on first',mode_planet:'Planetarium first',mode_light:'Short visit with a baby',btn_copy:'⎘ Copy this plan',copied:'✓ Copied',
 ex_explore:'Nothing here depends on limited tickets. Talks and screenings are optional; if the kids want to keep experimenting, stay at the booths.',ex_planet:'Once you have planetarium tickets, plan around the showtime and drop any talk that conflicts.',ex_light:'About two and a half hours. Energy and the baby come first; no running between buildings.',
-tag:{OFFICIAL:'Official time',TICKET:'Ticketed',PLAN:'Suggested',VERIFY:'Confirm on site',OPTION:'Optional'},src_ref:'Source ↗',
+tag:{OFFICIAL:'Official time',TICKET:'Ticketed',PLAN:'Suggested',VERIFY:'Confirm on site',OPTION:'Optional',PICK:'My pick'},src_ref:'Source ↗',
 tix_kicker:'AT THE ENTRANCE',tix_title:'Planetarium tickets',tix_box:'🌌 Planetarium · Math Sciences, 8th floor',tix_rules:'At 12:00, tickets for 1:00–3:30 shows; at 3:00, tickets for 4:00–5:30 shows. Up to 5 per person, first come first served; arrive 10 minutes before your show. No strollers inside.',tix_got:'Got planetarium tickets',tix_rules_link:'Official rules ↗',tix_time:'Showtime on your ticket',tix_time_hint:'Shows run about 20 minutes. Pick "Planetarium first" to add it to the timeline.',
 tix_need_time:'You checked "got tickets" but haven\'t entered the showtime. Pick "Planetarium first" and enter it to add the show to the timeline.',tix_range:'Planetarium shows run between 1:00 and 5:30 PM. Please check your ticket.',tix_conflict:'May conflict with {x} (end times are estimates). Your ticketed show comes first.',
 tix_cnsi:'<strong>CNSI lab tours are for ages 12 and up.</strong> With little kids, skip that line.',
@@ -141,6 +142,58 @@ l_redo:{t:'14:00',type:'PLAN',zh:['孩子选一个最喜欢的展台再玩一次
 l_home:{t:'14:30',type:'PLAN',zh:['返程','半天已经够了，留着好体力和好印象。',''],en:['Head home','Half a day is plenty. Leave on a high note.','']}
 };
 const MODES={explore:['arrive','tix','booth1','rest','talk','spin','wh2','booth2','rjg','leave'],planet:['arrive','tix','p_short','p_talk','p_hawaii','wh2','booth2','rjg','leave'],light:['arrive','tix','l_booth','l_rest','l_redo','l_home']};
+
+const ROOM={A:'Room A · CS24',B:'Room B · CS50',C:'Room C · CS76'};
+const S=(id,kind,s,e,room,g,en,zh,est,url)=>({id,kind,s,e,room,g,en,zh,est:!!est,url:url||U.event});
+const SESS=[
+S('t1200B','talk','12:00','12:45','B','na','Science and Education Pioneer Award (livestream)','科学与教育先锋奖（直播）'),
+S('t1245A','talk','12:45','13:15','A','g68','Rocket Science 101','火箭科学入门'),
+S('t1245B','talk','12:45','13:15','B','g912','How the Sun Paints the Sky: the Science of the Northern Lights','太阳怎样给天空上色：北极光的科学'),
+S('t1245C','talk','12:45','13:15','C','na','From Spinning Tops to Spinning Protons','从陀螺到自旋的质子'),
+S('t1330A','talk','13:30','14:00','A','g68','Power Up! How Fast-Charging Batteries Work','充电加速！快充电池是怎么工作的'),
+S('t1330B','talk','13:30','14:00','B','na','The Tiniest Molecular Machines','最小的分子机器'),
+S('t1330C','talk','13:30','14:00','C','k2','When Earth was a Boiling Magma Ocean','地球曾是一片沸腾的岩浆海'),
+S('t1415A','talk','14:15','14:45','A','na','Near-Earth Objects: Hunting Rocks in Space','近地天体：在太空里找石头'),
+S('t1415B','talk','14:15','14:45','B','k2',"Astronomy in Hawai'i: The Past, Present and Future",'夏威夷天文学：过去、现在和未来'),
+S('t1415C','talk','14:15','14:45','C','na','Why do fungal freeways never jam?','真菌的「高速公路」为什么从不堵车？'),
+S('t1500A','talk','15:00','15:30','A','g912','Exploring Distant Worlds: Water Worlds, Rocky Planets, and the Search for Life','探索遥远的世界：水世界、岩石行星和寻找生命'),
+S('t1500B','talk','15:00','15:30','B','na','Cosmic Collisions at the Hearts of Galaxies','星系核心的宇宙碰撞'),
+S('t1500C','talk','15:00','15:30','C','g35','Organic Chemistry in the Movies','电影里的有机化学'),
+S('t1545A','talk','15:45','16:15','A','na','Going Back in Time to the First Stars, Galaxies, and Black Holes','回到过去：最早的恒星、星系和黑洞'),
+S('t1545B','talk','15:45','16:15','B','na','Fun with Plastics','塑料真好玩'),
+S('t1545C','talk','15:45','16:15','C','na','Consider the ant and be wise: what can humans learn from ants?','向蚂蚁学习：人类能从蚂蚁身上学到什么'),
+S('t1630A','talk','16:30','17:00','A','na','Innate Immunity: Our Microscopic First Responders','先天免疫：身体里的微型急救员'),
+S('t1630B','talk','16:30','17:00','B','na','The Science of Yoga: Movement, Breath, and Mindfulness','瑜伽的科学：动作、呼吸和正念'),
+S('t1630C','talk','16:30','17:00','C','na','Journey to the Center of the Earth','地心之旅'),
+S('p1300','pbs','13:00','13:40',null,'all','Carnival of the Animals · advance screening + producer Q&A','《动物狂欢节》抢先放映 + 制片人问答',1,U.pbs),
+S('p1345','pbs','13:45','14:25',null,'all','Weather Hunters: Corky\'s Weird Rainforest Mystery · voice-cast Q&A','《Weather Hunters》雨林篇 · 配音演员问答',1,U.pbs),
+S('p1430','pbs','14:30','15:10',null,'all','Weather Hunters: Corky\'s Weird Desert Mystery · voice-cast Q&A','《Weather Hunters》沙漠篇 · 配音演员问答',1,U.pbs),
+S('p1515','pbs','15:15','16:00',null,'all','Ready Jet Go! Moon & Mars episodes · Q&A with Dr. Amy Mainzer','《Ready Jet Go!》月球与火星 · Amy Mainzer 问答',1,U.pbs),
+...['12','13','14','15','16'].map(h=>S('s'+h+'00','spin',h+':00',h+':35',null,'all','SpinLab spinning-water demo · Moore Hall courtyard','SpinLab 旋转科学演示 · Moore Hall 外院',1,U.spin))
+];
+const SID={talk:'t1330C',spin:'s1400',wh2:'p1430',rjg:'p1515',p_talk:'t1330C',p_hawaii:'t1415B'};
+const mins=x=>+x.slice(0,2)*60+ +x.slice(3);
+const sessLocZh=x=>x.room?ROOM[x.room]:(x.kind==='spin'?'Moore Hall':'PBS KIDS 放映 · 看现场指示'),sessLocEn=x=>x.room?ROOM[x.room]:(x.kind==='spin'?'Moore Hall':'PBS KIDS screening · follow signs');
+const sessName=se=>lang==='zh'?se.zh:se.en;
+const sessLoc=se=>se.room?ROOM[se.room]:(se.kind==='spin'?'Moore Hall':(lang==='zh'?'PBS KIDS 放映 · 看现场指示':'PBS KIDS screening · follow signs'));
+function conflicts(id,picks){const a=SESS.find(x=>x.id===id),out=[];
+  picks.forEach(p=>{if(p===id)return;const b=SESS.find(x=>x.id===p);if(b&&mins(a.s)<mins(b.e)&&mins(b.s)<mins(a.e))out.push(b.s+' '+sessName(b))});
+  const got=$('gotPlanet').checked,pt=$('planetTime').value;if(got&&pt){const m=mins(pt);if(mins(a.s)<m+20&&m-10<mins(a.e))out.push(t('pk_conf_tix')+' '+pt)}
+  return out;}
+let pkFilter='all';
+function renderPicker(){const picks=store.get('picks',[]);const G=t('g'),K=t('kind');
+  const my=SESS.filter(x=>picks.includes(x.id)).sort((a,b)=>a.s.localeCompare(b.s));
+  $('myPicks').innerHTML=`<div class="kicker">${t('pk_mine')} · ${my.length}</div>`+(my.length?`<div>${my.map(x=>{const c=conflicts(x.id,picks);return `<div class="mp ${c.length?'bad':''}"><b>${x.s}</b> ${esc(sessName(x))}${c.length?`<span class="cf">⚠ ${esc(t('pk_conf').replace('{x}',c.join(lang==='zh'?'、':'; ')))}</span>`:''}</div>`}).join('')}</div><div class="actions"><button class="btn" type="button" id="pkCopy">${t('pk_copy')}</button><button class="btn" type="button" id="pkClear">${t('pk_clear')}</button></div>`:`<p class="small muted" style="margin:6px 0 0">${t('pk_none')}</p>`);
+  const ok=x=>pkFilter==='all'||(pkFilter==='young'&&(x.g==='k2'||x.g==='g35'||x.g==='all'))||(pkFilter==='talk'&&x.kind==='talk')||(pkFilter==='show'&&x.kind!=='talk')||(pkFilter==='mine'&&picks.includes(x.id));
+  const list=SESS.filter(ok).sort((a,b)=>a.s.localeCompare(b.s)||(a.room||'Z').localeCompare(b.room||'Z'));
+  const groups={};list.forEach(x=>(groups[x.s]=groups[x.s]||[]).push(x));
+  $('sessList').innerHTML=list.length?Object.keys(groups).sort().map(k=>`<div class="slot"><div class="sh">${k}</div>${groups[k].map(x=>{const on=picks.includes(x.id),c=on?conflicts(x.id,picks):[];
+    return `<div class="se ${on?'on':''} ${c.length?'bad':''}"><div class="sb"><div class="st">${esc(sessName(x))}</div>${lang==='zh'&&x.kind==='talk'?`<div class="sen">${esc(x.en)}</div>`:''}<div class="sm"><span class="pill ${x.g==='k2'||x.g==='g35'?'':'neutral'}">${x.kind==='talk'?G[x.g]:K[x.kind]}</span> ${x.s}–${x.e}${x.est?' · '+t('pk_est'):''} · ${esc(sessLoc(x))} · <a href="${x.url}" target="_blank" rel="noopener">${t('src_ref')}</a></div>${c.length?`<div class="cf">⚠ ${esc(t('pk_conf').replace('{x}',c.join(lang==='zh'?'、':'; ')))}</div>`:''}</div><button class="star" type="button" data-pick="${x.id}" aria-pressed="${on}" aria-label="${esc(sessName(x))}">${on?'★':'☆'}</button></div>`}).join('')}</div>`).join(''):`<p class="small muted">${t('pk_empty')}</p>`;
+  document.querySelectorAll('#pkFilter [data-f]').forEach(b=>b.classList.toggle('on',b.dataset.f===pkFilter));
+  document.querySelectorAll('[data-pick]').forEach(b=>b.addEventListener('click',()=>{const P=store.get('picks',[]);const i=P.indexOf(b.dataset.pick);if(i<0)P.push(b.dataset.pick);else P.splice(i,1);store.set('picks',P);renderPicker();renderTimeline()}));
+  $('pkCopy')?.addEventListener('click',async()=>{const v=t('pk_mine')+'\n'+my.map(x=>x.s+'–'+x.e+'  '+sessName(x)+'  ('+sessLoc(x)+')').join('\n');try{await navigator.clipboard.writeText(v);$('pkCopy').textContent=t('copied')}catch{prompt('',v)}});
+  $('pkClear')?.addEventListener('click',()=>{if(confirm(t('pk_clear_q'))){store.set('picks',[]);renderPicker();renderTimeline()}});
+}
 const FAM={zh:[['婴儿车','天文馆和植物园都不能推婴儿车进去。主会场在户外广场，提前看官网停车页的无障碍和步行说明。'],['分头行动','一个大人去天文馆票亭排队，另一个带孩子先逛展台；进不进黑暗的穹顶，现场再决定。'],['吃的','现场餐饮不保证。出门前先吃，自带水、零食、奶瓶和换尿布用品。']],en:[['Strollers','Strollers aren\'t allowed in the planetarium or the botanical garden. The main area is an outdoor plaza; check the official parking page for accessibility and walking info.'],['Divide and conquer','One adult queues for planetarium tickets while the other starts the booths with the kids. Decide on the dark dome when you get there.'],['Food','Food on site isn\'t guaranteed. Eat before you go and bring water, snacks, bottles and diaper supplies.']]};
 const ACT={zh:[['科学实验与互动展台','CORE · 12:00–17:00','86 个互动展台，覆盖物理、化学、生物、地球科学和太空。','让孩子自己挑真正能动手的实验；收获看参与深度，不看打卡数量。',U.event],['天文馆 · 约 20 分钟','LIMITED · 现场纸票','在穹顶下认识恒星和行星，全家都能看；很小的孩子可能不喜欢全黑。','12:00、15:00 两轮领票；Math Sciences 8 楼，提前 10 分钟到；婴儿车不能进。',U.planet],['地球岩浆海 · 适龄讲座','K–2 · 13:30–14:00','比多数大学科普讲座更适合幼儿园到二年级，讲地球刚形成时的样子。','Room C（CS76）；孩子愿意留在展台就不用硬切过去。',U.event],['Weather Hunters 放映 + 配音演员问答','PBS KIDS · 13:45 / 14:30','两集天气侦探动画，三位配音演员到场回答孩子的问题，比讲座更容易坐得住。','免费不用领票；13:45 雨林篇、14:30 沙漠篇，挑一场。地点看现场指示。',U.pbs],['DIYnamics 旋转世界','ON THE HOUR · 30–40 MIN','在户外看一盆会转的水，理解台风和高空风为什么打转。','Moore Hall 外院；免费无票，现场确认哪个整点场。',U.spin],['Ready Jet Go! × Amy Mainzer','PBS KIDS · 15:15','太空动画 + 负责 NASA 近地天体勘测者（NEO Surveyor）的科学家现场问答。','免费不用领票；结束时间没公布，可能和晚场天文馆冲突。',U.pbs],['望远镜导览','OPTION · 现场领票','看 14 英寸望远镜和旋转圆顶，难得；9 楼集合，观测要爬梯子。','在天文馆票亭问当天场次；提前 5 分钟集合。孩子适不适合爬梯子由家长判断。',U.tele],['植物园寻宝','OPTION · 16:00 关门','有儿童寻宝单，但离主会场远，婴儿车不能进。','到 Ticketed Events 摊位领时段票，按票面入口进；16:00 关门，不能重复入园。',U.garden]],
 en:[['Hands-on booths','CORE · 12–5 PM','86 interactive booths across physics, chemistry, biology, Earth science and space.','Let kids choose experiments they can actually do. Depth beats a long checklist.',U.event],['Planetarium · about 20 min','LIMITED · paper tickets on site','Stars and planets on a dome, fun for the whole family; very young kids may not like the total darkness.','Ticket rounds at 12:00 and 3:00; Math Sciences 8th floor; arrive 10 minutes early; no strollers.',U.planet],['Magma ocean · talk for young kids','K–2 · 1:30–2:00','Pitched at kindergarten to second grade: what the young Earth looked like.','Room C (CS76). If the kids are happy at the booths, don\'t force it.',U.event],['Weather Hunters + voice-actor Q&A','PBS KIDS · 1:45 / 2:30','Two weather-mystery episodes, with three voice actors answering kids\' questions. Easier to sit through than a talk.','Free, no ticket. Rainforest at 1:45, desert at 2:30; pick one. Follow signs for the location.',U.pbs],['DIYnamics: spinning world','ON THE HOUR · 30–40 MIN','Watch a spinning tank of water outdoors and see why hurricanes and high winds swirl.','Moore Hall courtyard; free, no ticket. Confirm the session times on site.',U.spin],['Ready Jet Go! × Amy Mainzer','PBS KIDS · 3:15','Space cartoons plus Q&A with the scientist leading NASA\'s NEO Surveyor mission.','Free, no ticket. End time not posted; may clash with a late planetarium show.',U.pbs],['Telescope tours','OPTION · tickets on site','A rare look at a 14-inch telescope and rotating dome; meet on the 9th floor, and viewing involves a ladder.','Ask at the planetarium booth for times; arrive 5 minutes early. You decide whether a ladder suits your kid.',U.tele],['Botanical garden scavenger hunt','OPTION · closes 4:00','Kids\' scavenger hunt sheets, but far from the main area and no strollers.','Get a time-slot ticket at the Ticketed Events booth; enter where your ticket says; closes 4:00, no re-entry.',U.garden]]};
@@ -166,10 +219,13 @@ function renderTimeline(){
   $('modeExplain').textContent=t('ex_'+mode);
   document.querySelectorAll('[data-mode]').forEach(x=>x.classList.toggle('on',x.dataset.mode===mode));
   let arr=MODES[mode].map(id=>({...TL[id],id}));
+  const picks=store.get('picks',[]),have=new Set(arr.map(e=>SID[e.id]).filter(Boolean));
+  SESS.filter(x=>picks.includes(x.id)&&!have.has(x.id)).forEach(x=>arr.push({t:x.s,type:'PICK',url:x.url,zh:[x.zh,x.s+'–'+x.e,sessLocZh(x)],en:[x.en,x.s+'–'+x.e,sessLocEn(x)]}));
+  arr.sort((a,b)=>a.t.localeCompare(b.t));
   const got=$('gotPlanet').checked,pt=$('planetTime').value;
   if(got&&pt&&mode==='planet'){arr.push({t:pt,type:'TICKET',fixed:1,url:U.planet,zh:['已领票 · 天文馆场次','票面时间前至少 10 分钟到 Math Sciences 8 楼。放映约 20 分钟，婴儿车不能进。','Math Sciences · 8 楼'],en:['Ticketed · planetarium show','Be at Math Sciences, 8th floor, at least 10 minutes before. About 20 minutes; no strollers.','Math Sciences · 8th floor']});arr.sort((a,b)=>a.t.localeCompare(b.t));}
   const tg=t('tag');
-  $('timeline').innerHTML=arr.map(e=>{const [ti,de,lo]=e[lang];const cls=e.type==='OFFICIAL'||e.type==='TICKET'?'':(e.type==='VERIFY'?'warn':'neutral');
+  $('timeline').innerHTML=arr.map(e=>{const [ti,de,lo]=e[lang];const cls=e.type==='OFFICIAL'||e.type==='TICKET'?'':(e.type==='VERIFY'?'warn':(e.type==='PICK'?'blue':'neutral'));
     return `<div class="event ${e.fixed?'fixed':''}"><div class="evtime">${e.t}</div><div class="evdot"></div><div class="evbody"><div class="evhead"><div class="evtitle">${esc(ti)}</div><span class="pill ${cls}">${tg[e.type]}</span></div><div class="evdesc">${esc(de)}</div><div class="evfoot">${lo?`<span class="loc">📍 ${esc(lo)}</span>`:''}${e.url?`<a class="tiny" href="${e.url}" target="_blank" rel="noopener">${t('src_ref')}</a>`:''}</div></div></div>`}).join('');
   $('ticketTimeWrap').style.display=got?'block':'none';
   const hint=$('ticketHint');hint.style.display='none';
@@ -211,19 +267,20 @@ $('podPlay').addEventListener('click',()=>{if(aud.paused)aud.play().catch(()=>{$
 document.querySelectorAll('.pod .rate').forEach(c=>c.addEventListener('click',()=>{aud.playbackRate=+c.dataset.rate;document.querySelectorAll('.pod .rate').forEach(x=>x.setAttribute('aria-pressed',x===c?'true':'false'))}));
 
 // ---- wiring ----
-function setLang(l){lang=l;store.set('lang',l);applyStatic();renderTimeline();renderLists();loadPod();}
+function setLang(l){lang=l;store.set('lang',l);applyStatic();renderTimeline();renderLists();renderPicker();loadPod();}
+document.querySelectorAll('#pkFilter [data-f]').forEach(b=>b.addEventListener('click',()=>{pkFilter=b.dataset.f;renderPicker()}));
 document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.lang!==lang)setLang(b.dataset.lang)}));
 function switchTab(id){document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.tab===id));document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.id===id));window.scrollTo({top:document.querySelector('nav').offsetTop-3,behavior:'smooth'});}
 document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>switchTab(b.dataset.tab)));
 document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;store.set('mode',mode);renderTimeline()}));
 $('gotPlanet').checked=store.get('gotPlanet',false);$('planetTime').value=store.get('planetTime','');
-$('gotPlanet').addEventListener('change',()=>{store.set('gotPlanet',$('gotPlanet').checked);renderTimeline()});
-$('planetTime').addEventListener('change',()=>{store.set('planetTime',$('planetTime').value);renderTimeline()});
+$('gotPlanet').addEventListener('change',()=>{store.set('gotPlanet',$('gotPlanet').checked);renderTimeline();renderPicker()});
+$('planetTime').addEventListener('change',()=>{store.set('planetTime',$('planetTime').value);renderTimeline();renderPicker()});
 $('resetChecks').addEventListener('click',()=>{if(confirm(t('reset_q'))){store.set('checks',{});renderChecklist()}});
 $('copyPlan').addEventListener('click',async()=>{const v=t('copy_head')+t('copy_mode')[mode]+t('copy_tail');try{await navigator.clipboard.writeText(v);$('copyPlan').textContent=t('copied');setTimeout(()=>$('copyPlan').textContent=t('btn_copy'),1800)}catch{prompt('',v)}});
 $('downloadICS').addEventListener('click',()=>{const st=new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d+/,'');
   const ev=(uid,a,b,sum,loc,desc,al)=>['BEGIN:VEVENT','UID:'+uid+'@eyu-guide','DTSTAMP:'+st,'DTSTART:'+a,'DTEND:'+b,'SUMMARY:'+sum,'LOCATION:'+loc,'DESCRIPTION:'+desc,'URL:https://exploringyouruniverse.ucla.edu/','BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+sum,'TRIGGER:-PT'+al+'M','END:VALARM','END:VEVENT'];
-  const txt=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//EYU Field Guide//2026//EN',...ev('eyu2026-tix','20261108T200000Z','20261108T201500Z',t('ics_tix'),'Planetarium booth\\, UCLA Court of Sciences',t('ics_tix_d'),30),...ev('eyu2026-day','20261108T200000Z','20261109T010000Z',t('ics_sum'),'UCLA Court of Sciences\\, Los Angeles\\, CA',t('ics_d'),90),'END:VCALENDAR',''].join('\r\n');
+  const txt=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//EYU Field Guide//2026//EN',...ev('eyu2026-tix','20261108T200000Z','20261108T201500Z',t('ics_tix'),'Planetarium booth\\, UCLA Court of Sciences',t('ics_tix_d'),30),...ev('eyu2026-day','20261108T200000Z','20261109T010000Z',t('ics_sum'),'UCLA Court of Sciences\\, Los Angeles\\, CA',t('ics_d'),90),...SESS.filter(x=>store.get('picks',[]).includes(x.id)).flatMap(x=>{const z=v=>{const m=mins(v)+480;return '20261108T'+String(Math.floor(m/60)).padStart(2,'0')+String(m%60).padStart(2,'0')+'00Z'};return ev('eyu2026-'+x.id,z(x.s),z(x.e),sessName(x),(x.room?ROOM[x.room]:sessLoc(x)).replace(/,/g,'\\,')+'\\, UCLA',x.en,10)}),'END:VCALENDAR',''].join('\r\n');
   const u=URL.createObjectURL(new Blob([txt],{type:'text/calendar;charset=utf-8'})),a=document.createElement('a');a.href=u;a.download='UCLA-EYU-2026.ics';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),5000)});
 setLang(lang);
 })();
